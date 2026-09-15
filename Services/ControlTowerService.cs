@@ -15,8 +15,14 @@ public class ControlTowerService(AsyncDroneService asyncDroneService)
         {
             flightTasks.Add(_asyncDroneService.FlyDroneAsync(drone));
         }
-
-        await Task.WhenAll(flightTasks);
+        try {
+            await Task.WhenAll(flightTasks);
+        }
+        catch (Exception ex)
+        {
+            // Handle exceptions that may occur during the flights
+            Console.WriteLine($"An error occurred during drone flights: {ex.Message}");
+        }
     }
 }
 
