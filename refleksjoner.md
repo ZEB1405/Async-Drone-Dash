@@ -9,3 +9,5 @@ Jeg brukte `async/await` og `Task.WhenAll` for å kjøre droneflyvningene asynkr
 ## ControlTowerService
 
 Jeg laget en `ControlTowerService` som har ansvar for å koordinere flere droneflyvninger. Jeg brukte `Task.WhenAll` for å vente på alle flyvningene, og `try/catch` for å håndtere feil. Dette gjorde også koden mer ryddig siden Control Tower håndterer orkestreringen, mens `AsyncDroneService` kun har ansvar for selve flyvningen.
+
+## Del C
