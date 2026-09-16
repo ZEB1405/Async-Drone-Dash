@@ -2,8 +2,6 @@
 
 Async Drone Dash er en C# console-applikasjon som simulerer droneflyvninger og demonstrerer forskjellen mellom tradisjonelle tråder og asynkron programmering.
 
-Prosjektet ble laget som en del av Kodehode-kurset.
-
 ## Funksjoner
 
 Programmet har en meny med tre deler:
